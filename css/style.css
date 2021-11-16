@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Pacifico&display=swap");
+
+.logo {
+  font-family: "Pacifico", cursive;
+  font-size: 24px;
+  color: #1b1b1b;
+}
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 11.5px 0;
+}
+
+.navbar-item {
+  display: flex;
+  align-items: center;
+  font-family: "inter", sans-serif;
+}
+.navbar-item li a {
+  color: #1b1b1b;
+}
+.navbar-item li + li {
+  margin-left: 16px;
+}
+
+.navbar-item li:last-child {
+  margin-left: 26px;
+}
+
+.navbar-search-bg {
+  background: rgba(0, 0, 0, 0.65);
+  padding: 28px 0;
+}
+
+.navbar-search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search {
+  display: flex;
+}
+.search input {
+  padding: 7px 9px;
+  border: 0;
+  outline: none;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  width: 400px;
+}
+
+.search a {
+  padding: 7px 10px;
+  background: #ffff;
+  margin: 0;
+  border: 0;
+  color: #d4d4d4;
+}
+
+.navbar-search .nav {
+  display: flex;
+}
+
+.nav li a {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  color: #ffff;
+}
+
+.nav li + li {
+  margin-left: 29px;
+}
