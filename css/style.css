@@ -136,7 +136,15 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
+.text-introducao h1:nth-child(3) {
+  padding-bottom: 60px;
+}
+.btn-intro {
+  padding: 15px 40px;
+  font-size: 18px;
+  color: #ffff;
+  background: #e22574;
+}
 /* OFERTAS */
 
 .subtitulo {
@@ -158,6 +166,7 @@ body {
 .itens-oferta {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-top: 81px;
 }
 
@@ -232,6 +241,7 @@ body {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding-bottom: 40px;
 }
 
 .itens-produto a {
@@ -247,6 +257,72 @@ body {
   text-transform: uppercase;
 }
 
-.item-produto {
-  margin-bottom: 2;
+.nossa-meta {
+  position: relative;
+}
+.nossa-meta::after {
+  content: "";
+  display: block;
+  width: 372px;
+  height: 271px;
+  background: url("../img/linhas.svg") no-repeat center;
+  position: absolute;
+  top: 200px;
+  left: 381px;
+}
+.sub-metas {
+  margin-top: 89px;
+}
+
+.logo-metas {
+  font-size: 48px;
+}
+.metas {
+  display: grid;
+  grid-template-areas: "column-1 column-2 column-3";
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.column-1 {
+  grid-area: column-1;
+  padding-top: 182px;
+  padding-left: 127px;
+}
+
+.column-2 {
+  grid-area: column-2;
+  padding: 211px 146px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo-metas {
+  margin-bottom: 103px;
+}
+
+.btn-metas {
+  padding: 10px 40px;
+  background: #e22574;
+  color: #000;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.column-3 {
+  grid-area: column-3;
+}
+
+.column-3 .card-metas:first-child {
+  margin-top: 81px;
+  margin-bottom: 113px;
+}
+.card-metas {
+  max-width: 220px;
+}
+
+.card-metas h3 {
+  font-size: 24px;
+  font-weight: 400;
+  color: #070707;
+  margin-bottom: 21px;
+  text-align: center;
 }
