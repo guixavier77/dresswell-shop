@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Pacifico&display=swap");
 
+body {
+  font-family: "Inter", sans-serif;
+  background: #d4d4d4;
+}
 .logo {
   font-family: "Pacifico", cursive;
   font-size: 24px;
@@ -11,16 +15,18 @@
 }
 
 .header {
+  padding: 11.5px 0;
+  background: #ffff;
+}
+.header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 11.5px 0;
 }
 
 .navbar-item {
   display: flex;
   align-items: center;
-  font-family: "inter", sans-serif;
 }
 .navbar-item li a {
   color: #1b1b1b;
@@ -51,7 +57,6 @@
   padding: 7px 9px;
   border: 0;
   outline: none;
-  font-family: "Inter", sans-serif;
   font-size: 14px;
   width: 400px;
 }
@@ -69,11 +74,155 @@
 }
 
 .nav li a {
-  font-family: "Inter", sans-serif;
   font-size: 18px;
   color: #ffff;
 }
 
 .nav li + li {
   margin-left: 29px;
+}
+
+.introducao {
+  background: url("../img/bg-introducao.jpg") no-repeat center;
+  background-size: cover;
+  height: 500px;
+  text-align: center;
+}
+
+.text-introducao {
+  padding-top: 37px;
+}
+.text-introducao h1 {
+  color: #ffff;
+  font-size: 72px;
+  font-weight: 600;
+  line-height: 72px;
+  letter-spacing: 0.02em;
+  margin-bottom: 13px;
+}
+
+.text-gradient-1 {
+  background-image: linear-gradient(
+      93.02deg,
+      #1224c8 -29.16%,
+      rgba(255, 255, 255, 0) 92.9%
+    ),
+    linear-gradient(0deg, #2fb7e2, #2fb7e2);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-2 {
+  background: linear-gradient(
+      91.8deg,
+      #f1a4f2 3.5%,
+      rgba(255, 255, 255, 0) 81.73%
+    ),
+    linear-gradient(0deg, #c819d8, #c819d8);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-3 {
+  background: linear-gradient(
+      91.54deg,
+      #22eda4 4.68%,
+      rgba(255, 255, 255, 0) 117.13%
+    ),
+    linear-gradient(0deg, #63e6c6, #63e6c6);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* OFERTAS */
+
+.subtitulo {
+  margin-top: 63px;
+  text-align: center;
+  font-size: 32px;
+  color: #1a1a1a;
+}
+
+.subtitulo::after {
+  content: "";
+  display: block;
+  width: 72px;
+  height: 2px;
+  background: #1a1a1a;
+  margin: 12px auto;
+}
+
+.itens-oferta {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 81px;
+}
+
+.oferta-price {
+  margin-top: 21px;
+}
+
+.item-name {
+  font-size: 18px;
+  color: #1a1a1a;
+  margin-bottom: 18px;
+  text-align: center;
+}
+
+.value-price {
+  display: flex;
+  justify-content: center;
+}
+
+.price {
+  color: #797979;
+  margin-right: 31px;
+}
+
+.oferta-buttons {
+  margin-top: 20px;
+}
+.btn-comprar {
+  background: #ffff;
+  color: #1a1a1a;
+  font-size: 18px;
+  padding: 8px 8px;
+  border: 1px solid #000;
+}
+
+.btn-comprar:hover {
+  background: #070707;
+  color: #ffff;
+  border: 1px solid #fff;
+}
+
+.btn-cart {
+  background: #070707;
+  color: #fff;
+  font-size: 18px;
+  padding: 8px 8px;
+  margin-left: 35px;
+  border: 1px solid #000;
+}
+
+.btn-cart:hover {
+  background: #ffff;
+  color: #1a1a1a;
+}
+
+.produtos {
+  background: #000;
+  margin-top: 115px;
+}
+
+.sub-produtos {
+  color: #ffff;
+  padding-top: 88px;
+}
+
+.sub-produtos::after {
+  background: #fff;
 }
