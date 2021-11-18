@@ -335,6 +335,7 @@ body {
 .info-footer {
   background: #000;
   padding: 40px 0;
+  color: #fff;
 }
 
 .info-footer h3 {
@@ -343,22 +344,14 @@ body {
 }
 
 .info-footer .container {
-  display: grid;
-  grid-template-areas: "logo contact redes-sociais";
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-content: center;
-  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .logo-info-footer {
   font-size: 48px;
   color: #fff;
-  grid-area: logo;
-}
-
-.contact {
-  grid-area: contact;
-  color: #fff;
+  align-self: center;
 }
 
 .contact ul {
@@ -366,13 +359,12 @@ body {
   padding-left: 13px;
 }
 
-.contact li + li {
-  margin-top: 9px;
+.contact ul li a {
+  color: #fff;
 }
 
-.redes-sociais {
-  grid-area: redes-sociais;
-  color: #fff;
+.contact li + li {
+  margin-top: 9px;
 }
 
 .redes-sociais ul {
@@ -381,6 +373,10 @@ body {
 
 .redes-sociais ul li + li {
   margin-left: 19px;
+}
+
+.redes-sociais li:hover {
+  opacity: 50%;
 }
 
 .footer {
