@@ -22,6 +22,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .navbar-item {
@@ -48,6 +49,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .search {
@@ -148,7 +150,6 @@ body {
 /* OFERTAS */
 
 .subtitulo {
-  margin-top: 63px;
   text-align: center;
   font-size: 32px;
   color: #1a1a1a;
@@ -168,6 +169,10 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
   margin-top: 81px;
+}
+
+.ofertas {
+  padding-top: 63px;
 }
 
 .oferta-price {
@@ -259,6 +264,7 @@ body {
 
 .nossa-meta {
   position: relative;
+  padding: 89px 0 113px 0;
 }
 .nossa-meta::after {
   content: "";
@@ -267,11 +273,9 @@ body {
   height: 271px;
   background: url("../img/linhas.svg") no-repeat center;
   position: absolute;
-  top: 200px;
+  top: 289px;
   left: 381px;
-}
-.sub-metas {
-  margin-top: 89px;
+  z-index: -1;
 }
 
 .logo-metas {
@@ -305,6 +309,7 @@ body {
   color: #000;
   font-size: 18px;
   font-weight: 500;
+  z-index: 1;
 }
 
 .column-3 {
@@ -325,4 +330,69 @@ body {
   color: #070707;
   margin-bottom: 21px;
   text-align: center;
+}
+
+.info-footer {
+  background: #000;
+  padding: 40px 0;
+}
+
+.info-footer h3 {
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.info-footer .container {
+  display: grid;
+  grid-template-areas: "logo contact redes-sociais";
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-info-footer {
+  font-size: 48px;
+  color: #fff;
+  grid-area: logo;
+}
+
+.contact {
+  grid-area: contact;
+  color: #fff;
+}
+
+.contact ul {
+  list-style: inside;
+  padding-left: 13px;
+}
+
+.contact li + li {
+  margin-top: 9px;
+}
+
+.redes-sociais {
+  grid-area: redes-sociais;
+  color: #fff;
+}
+
+.redes-sociais ul {
+  display: flex;
+}
+
+.redes-sociais ul li + li {
+  margin-left: 19px;
+}
+
+.footer {
+  display: flex;
+  padding: 10px;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.footer span {
+  color: #797979;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 9px;
 }
