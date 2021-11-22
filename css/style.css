@@ -17,9 +17,9 @@ body {
 .header {
   padding: 11.5px 0;
   background: #ffff;
-  /* position: -webkit-sticky; /* Necessário para funcionar no Safari */
-  /* position: sticky;
-  top: 0; */
+  position: -webkit-sticky; /* Necessário para funcionar no Safari */
+  position: sticky;
+  top: 0;
 }
 .header .container {
   display: flex;
@@ -47,6 +47,9 @@ body {
 .navbar-search-bg {
   background: #292920;
   padding: 28px 0;
+  position: -webkit-sticky; /* Necessário para funcionar no Safari */
+  position: sticky;
+  top: 50px;
 }
 
 .navbar-search {
