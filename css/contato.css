@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Pacifico&display=swap");
+
+.contato {
+  padding: 60px 0 55px 0;
+}
+.contato .grid-contato {
+  display: grid;
+  grid-template-areas: "form redes-contato";
+  grid-template-columns: 1fr 1fr;
+}
+.contato .title-contato {
+  font-size: 24px;
+  text-align: center;
+  padding-bottom: 56px;
+}
+
+.contato form {
+  grid-area: form;
+  display: flex;
+  flex-direction: column;
+  padding-right: 184px;
+  border-right: 1px solid #d4d4d4;
+}
+
+.contato form label {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.contato form input {
+  margin-bottom: 28px;
+  padding: 10px;
+  border: 2px solid #000;
+}
+
+textarea {
+  resize: none;
+  padding: 10px;
+  height: 190px;
+  margin-bottom: 20px;
+  border: 2px solid #000;
+}
+
+.contato .btn-form {
+  background: none;
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+  border: 2px solid #000;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+
+.contato .btn-form:hover {
+  border: 3px solid;
+}
+.redes-contato {
+  grid-area: redes-contato;
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  padding-left: 169px;
+}
+.redes-contato h3 {
+  font-size: 24px;
+  color: #e22574;
+  padding-bottom: 16px;
+}
+
+.redes-contato .nossos-contatos {
+  margin-bottom: 54px;
+}
+
+.redes-contato .nossos-contatos ul {
+  list-style: inside;
+  font-size: 18px;
+  color: #3a3939;
+}
+
+.redes-contato .nossos-contatos ul li + li {
+  margin-top: 9px;
+}
+
+.redes-contato .redes-sociais-contato ul {
+  display: flex;
+}
+
+.redes-contato .redes-sociais-contato ul li + li {
+  margin-left: 19px;
+}
