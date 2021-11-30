@@ -7,23 +7,23 @@
 
 .entrar h2 {
   text-align: center;
-  font-size: 32px;
+  @include type-font(32);
   padding: 78px 0 40px 0;
 }
 
 .entrar .cadastro .h2-cadastro-color {
-  color: #e22574;
+  color: $color-terciary;
 }
 
 .entrar label {
   padding-bottom: 13px;
-  font-size: 18px;
+  @include type-font(18);
   color: #1b738f;
 }
 
 .entrar button {
   background: #070707;
-  color: #fff;
+  color: $color-primary;
   width: 200px;
   height: 40px;
   cursor: pointer;

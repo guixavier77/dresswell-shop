@@ -13,8 +13,8 @@
 
 .sobre .texto li {
   max-width: 350px;
-  line-height: 26px;
   font-size: 18px;
+  line-height: 26px;
 }
 
 .sobre .texto li + li {
@@ -33,7 +33,7 @@
 }
 
 .sobre .texto .paragrafo-1 span {
-  color: #e22574;
+  color: $color-terciary;
 }
 
 .sobre .texto .missao p span {

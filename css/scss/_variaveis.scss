@@ -1,0 +1,47 @@
+// Breakpoints
+$desktop: 1200px;
+$tablet: 768px;
+$smartphone: 390px;
+// cores
+$color-primary: #fff;
+$color-secondary: #1a1a1a;
+$color-terciary: #e22574;
+
+// Calculo em
+
+@function em($pixel, $contexto: 16) {
+  @return $pixel / $contexto + em;
+}
+
+@mixin type-font($size, $contexto: 16) {
+  @if $size == 18 {
+    font-size: em(18);
+    line-height: em(30, 18);
+  } @else if $size == 24 {
+    font-size: em(24);
+    line-height: em(30, 24);
+  } @else if $size == 32 {
+    font-size: em(32, 16);
+    line-height: em(30, 32);
+  } @else if $size == 72 {
+    font-size: em(72);
+    font-weight: 600;
+    line-height: em(30, 72);
+  }
+}
+
+@mixin device($size) {
+  @if $size == l {
+    @media screen and (min-width: $desktop) {
+      @content;
+    }
+  } @else if $size == m {
+    @media screen and (min-width: $tablet) and (max-width: ($desktop - 1)) {
+      @content;
+    }
+  } @else if $size == s {
+    @media screen and (max-width: ($tablet - 1)) {
+      @content;
+    }
+  }
+}

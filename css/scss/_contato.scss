@@ -9,7 +9,7 @@
   grid-template-columns: 1fr 1fr;
 }
 .contato .title-contato {
-  font-size: 24px;
+  @include type-font(24);
   text-align: center;
   padding-bottom: 56px;
 }
@@ -23,14 +23,14 @@
 }
 
 .contato form label {
-  font-size: 18px;
+  @include type-font(18);
   margin-bottom: 10px;
 }
 
 .contato form input {
   margin-bottom: 28px;
   padding: 10px;
-  border: 2px solid #000;
+  border: 2px solid $color-secondary;
 }
 
 textarea {
@@ -38,7 +38,7 @@ textarea {
   padding: 10px;
   height: 190px;
   margin-bottom: 20px;
-  border: 2px solid #000;
+  border: 2px solid $color-secondary;
 }
 
 .contato .btn-form {
@@ -46,7 +46,7 @@ textarea {
   width: 150px;
   height: 40px;
   cursor: pointer;
-  border: 2px solid #000;
+  border: 2px solid $color-secondary;
   font-size: 14px;
   text-transform: uppercase;
   font-weight: bold;
@@ -64,8 +64,8 @@ textarea {
   padding-left: 169px;
 }
 .redes-contato h3 {
-  font-size: 24px;
-  color: #e22574;
+  @include type-font(24);
+  color: $color-terciary;
   padding-bottom: 16px;
 }
 
@@ -75,7 +75,7 @@ textarea {
 
 .redes-contato .nossos-contatos ul {
   list-style: inside;
-  font-size: 18px;
+  @include type-font(24);
   color: #3a3939;
 }
 
