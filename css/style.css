@@ -7,9 +7,6 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Pacifico&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Pacifico&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Pacifico&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Pacifico&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -411,87 +408,14 @@ ul {
   font-weight: normal;
 }
 
-img {
-  display: block;
-  max-width: 100%;
-}
-
-.subtitulo {
-  text-align: center;
-  font-size: 1.77em;
-  color: #1a1a1a;
-}
-
-.subtitulo::after {
-  content: "";
-  display: block;
-  width: 72px;
-  height: 2px;
-  background: #1a1a1a;
-  margin: 12px auto;
-}
-
-.item-name {
-  font-size: 1.125em;
-  line-height: 1.66667em;
-  line-height: 20px;
-  color: #1a1a1a;
-  padding-bottom: 18px;
-  text-align: center;
-  max-width: 330px;
-  align-self: stretch;
-  height: 34px;
-}
-
-.value-price {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.price {
-  color: #797979;
-  text-decoration: line-through;
-}
-
-.price-promo {
-  font-weight: bold;
-  font-size: 20px;
-}
-
-.btn-comprar {
-  background: #fff;
-  color: #1a1a1a;
-  font-size: 1.125em;
-  line-height: 1.66667em;
-  padding: 8px 8px;
-  border: 1px solid #1a1a1a;
-}
-
-.btn-comprar:hover {
-  background: #070707;
-  color: #fff;
-  border: 1px solid #fff;
-}
-
-.btn-cart {
-  background: #070707;
-  color: #fff;
-  font-size: 1.125em;
-  line-height: 1.66667em;
-  padding: 8px 8px;
-  margin-left: 35px;
-  border: 1px solid #1a1a1a;
-}
-
-.btn-cart:hover {
-  background: #fff;
-  color: #1a1a1a;
-}
-
 body {
   font-family: "Inter", sans-serif;
   background: #eeeeee;
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }
 
 .logo {
@@ -576,7 +500,7 @@ body {
   color: #fff;
 }
 
-.navbar-search-bg .navbar-search .nav {
+.navbar-search-bg .nav {
   display: flex;
 }
 
@@ -588,6 +512,105 @@ body {
 
 .navbar-search-bg .nav li + li {
   margin-left: 29px;
+}
+
+.nav-page {
+  background: #000;
+  padding: 25px 0;
+  color: #fff;
+}
+
+.nav-page .container {
+  display: flex;
+  align-items: center;
+}
+
+.nav-page .container a {
+  font-size: 48px;
+  color: #fff;
+}
+
+.nav-page .sub-nav-page {
+  color: #fff;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.nav-page .sub-nav-page::after {
+  background: #fff;
+}
+
+.subtitulo {
+  text-align: center;
+  font-size: 1.77em;
+  color: #1a1a1a;
+}
+
+.subtitulo::after {
+  content: "";
+  display: block;
+  width: 72px;
+  height: 2px;
+  background: #1a1a1a;
+  margin: 12px auto;
+}
+
+.item-name {
+  font-size: 1.125em;
+  line-height: 1.66667em;
+  line-height: 20px;
+  color: #1a1a1a;
+  padding-bottom: 18px;
+  text-align: center;
+  max-width: 330px;
+  align-self: stretch;
+  height: 34px;
+}
+
+.value-price {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.price {
+  color: #797979;
+  text-decoration: line-through;
+}
+
+.price-promo {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.btn-comprar {
+  background: #fff;
+  color: #1a1a1a;
+  font-size: 1.125em;
+  line-height: 1.66667em;
+  padding: 8px 8px;
+  border: 1px solid #1a1a1a;
+}
+
+.btn-comprar:hover {
+  background: #070707;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.btn-cart {
+  background: #070707;
+  color: #fff;
+  font-size: 1.125em;
+  line-height: 1.66667em;
+  padding: 8px 8px;
+  margin-left: 35px;
+  border: 1px solid #1a1a1a;
+}
+
+.btn-cart:hover {
+  background: #fff;
+  color: #1a1a1a;
 }
 
 .introducao {
@@ -860,10 +883,6 @@ body {
   padding: 78px 0 40px 0;
 }
 
-.entrar .cadastro .h2-cadastro-color {
-  color: #e22574;
-}
-
 .entrar label {
   padding-bottom: 13px;
   font-size: 1.125em;
@@ -899,13 +918,17 @@ body {
   flex-direction: column;
 }
 
-.entrar .cadastro {
+.cadastro {
   grid-area: cadastro;
   padding: 0 91px 0 71px;
   border-left: 1px solid #d4d4d4;
 }
 
-.entrar .cadastro form {
+.cadastro .h2-cadastro-color {
+  color: #e22574;
+}
+
+.cadastro form {
   display: flex;
   flex-direction: column;
 }
@@ -947,7 +970,7 @@ body {
   border: 2px solid #1a1a1a;
 }
 
-textarea {
+.contato form textarea {
   resize: none;
   padding: 10px;
   height: 190px;
@@ -1053,38 +1076,12 @@ textarea {
   margin-top: 5px;
 }
 
-.sobre .texto .sobre .imagens {
+.sobre .imagens {
   grid-area: imagens;
 }
 
 .sobre .imagens div:first-child {
   margin-bottom: 55px;
-}
-
-.nav-page {
-  background: #000;
-  padding: 25px 0;
-  color: #fff;
-}
-
-.nav-page .container {
-  display: flex;
-  align-items: center;
-}
-
-.nav-page .container a {
-  font-size: 48px;
-  color: #fff;
-}
-
-.sub-nav-page {
-  color: #fff;
-  text-align: center;
-  margin: 0 auto;
-}
-
-.sub-nav-page::after {
-  background: #fff;
 }
 
 .products {
@@ -1093,34 +1090,34 @@ textarea {
   grid-template-columns: 260px;
 }
 
-.aside {
+.products .aside {
   display: flex;
   flex-direction: column;
   padding: 69px 0 100px;
   grid-area: aside;
 }
 
-.aside .menu {
+.products .aside .menu {
   border-right: 1px solid #d4d4d4;
 }
 
-.aside .menu div {
+.products .aside .menu div {
   display: flex;
   flex-direction: column;
 }
 
-.aside div + div {
+.products .aside .menu div + div {
   margin-top: 50px;
 }
 
-.aside div h3 {
+.products .aside .menu h3 {
   font-size: 1.5em;
   line-height: 1.25em;
   color: #1a1a1a;
   margin-bottom: 26px;
 }
 
-.aside div h4 {
+.products .aside .menu h4 {
   font-size: 1.125em;
   line-height: 1.66667em;
   font-weight: 500;
@@ -1129,13 +1126,13 @@ textarea {
   margin-bottom: 24px;
 }
 
-.aside div input {
+.products .aside .menu input {
   margin-right: 15px;
   margin-bottom: 14px;
 }
 
 /* COMPRAS */
-.itens-compras {
+.list-products .itens-compras {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1143,24 +1140,23 @@ textarea {
   padding: 49px 0 60px 60px;
 }
 
-.itens-compras .item {
+.list-products .itens-compras .item {
   margin-top: 20px;
-  /* max-height: 386px; */
 }
 
-.name-compras {
+.list-products .itens-compras .item .compras-price .name-compras {
   max-width: 240px;
   text-align: center;
   margin-top: 5px;
 }
 
-.compras-buttons {
+.list-products .itens-compras .item .compras-price .compras-buttons {
   display: flex;
   flex-direction: column;
   text-align: center;
 }
 
-.compras-btn {
+.list-products .itens-compras .item .compras-price .compras-buttons .compras-btn {
   margin: 0;
   margin-top: 8px;
 }

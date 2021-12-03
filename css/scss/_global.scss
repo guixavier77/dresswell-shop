@@ -1,21 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Pacifico&display=swap");
+body {
+  font-family: "Inter", sans-serif;
+  background: #eeeeee;
+}
+
 img {
   display: block;
   max-width: 100%;
+}
+
+.logo {
+  font-family: "Pacifico", cursive;
+  font-size: 24px;
+  color: #1b1b1b;
+}
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 11.5px 0;
+  background: $color-primary;
+  position: -webkit-sticky; /* Necessário para funcionar no Safari */
+  position: sticky;
+  top: 0;
+  z-index: 1;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .navbar-item {
+    display: flex;
+    align-items: center;
+    li a {
+      color: #1b1b1b;
+    }
+    li + li {
+      margin-left: 16px;
+    }
+    li:last-child {
+      margin-left: 26px;
+    }
+  }
+}
+
+.navbar-search-bg {
+  background: $color-secondary;
+  padding: 28px 0;
+  .navbar-search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .search {
+    display: flex;
+    input {
+      padding: 7px 9px;
+      border: 0;
+      outline: none;
+      font-size: 14px;
+      width: 400px;
+    }
+    a {
+      padding: 7px 10px;
+      background: $color-primary;
+      margin: 0;
+      border: 0;
+      color: #d4d4d4;
+      &:hover {
+        background: $color-secondary;
+        color: $color-primary;
+      }
+    }
+  }
+
+  .nav {
+    display: flex;
+    li a {
+      @include type-font(18);
+      color: $color-primary;
+    }
+    li + li {
+      margin-left: 29px;
+    }
+  }
+}
+
+.nav-page {
+  background: #000;
+  padding: 25px 0;
+  color: $color-primary;
+  .container {
+    display: flex;
+    align-items: center;
+    a {
+      font-size: 48px;
+      color: $color-primary;
+    }
+  }
+
+  .sub-nav-page {
+    color: $color-primary;
+    text-align: center;
+    margin: 0 auto;
+    &::after {
+      background: $color-primary;
+    }
+  }
 }
 
 .subtitulo {
   text-align: center;
   font-size: 1.77em;
   color: #1a1a1a;
-}
-
-.subtitulo::after {
-  content: "";
-  display: block;
-  width: 72px;
-  height: 2px;
-  background: #1a1a1a;
-  margin: 12px auto;
+  &::after {
+    content: "";
+    display: block;
+    width: 72px;
+    height: 2px;
+    background: #1a1a1a;
+    margin: 12px auto;
+  }
 }
 
 .item-name {

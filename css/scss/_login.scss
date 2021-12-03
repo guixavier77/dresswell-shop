@@ -3,55 +3,55 @@
   grid-template-areas: "login cadastro";
   grid-template-columns: 1fr 1fr;
   padding: 60px 0 89px 0;
-}
+  h2 {
+    text-align: center;
+    @include type-font(32);
+    padding: 78px 0 40px 0;
+  }
 
-.entrar h2 {
-  text-align: center;
-  @include type-font(32);
-  padding: 78px 0 40px 0;
-}
+  label {
+    padding-bottom: 13px;
+    @include type-font(18);
+    color: #1b738f;
+  }
 
-.entrar .cadastro .h2-cadastro-color {
-  color: $color-terciary;
-}
+  button {
+    background: #070707;
+    color: $color-primary;
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+    margin: 0 auto;
+    margin-bottom: 34px;
+    border: none;
+  }
 
-.entrar label {
-  padding-bottom: 13px;
-  @include type-font(18);
-  color: #1b738f;
-}
+  input {
+    margin-bottom: 30px;
+    border: 1px solid #070707;
+    padding: 10px 12px;
+    outline: none;
+  }
 
-.entrar button {
-  background: #070707;
-  color: $color-primary;
-  width: 200px;
-  height: 40px;
-  cursor: pointer;
-  margin: 0 auto;
-  margin-bottom: 34px;
-  border: none;
+  .login {
+    grid-area: login;
+    padding: 0 71px 0 67px;
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+  }
 }
-.entrar input {
-  margin-bottom: 30px;
-  border: 1px solid #070707;
-  padding: 10px 12px;
-  outline: none;
-}
-.entrar .login {
-  grid-area: login;
-  padding: 0 71px 0 67px;
-}
-
-.entrar .login form {
-  display: flex;
-  flex-direction: column;
-}
-.entrar .cadastro {
+.cadastro {
   grid-area: cadastro;
   padding: 0 91px 0 71px;
   border-left: 1px solid #d4d4d4;
-}
-.entrar .cadastro form {
-  display: flex;
-  flex-direction: column;
+  .h2-cadastro-color {
+    color: $color-terciary;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
 }

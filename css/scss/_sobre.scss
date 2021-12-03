@@ -1,52 +1,46 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Pacifico&display=swap");
-
 .sobre {
   padding: 81px 0 55px 0;
   display: grid;
   grid-template-areas: "texto imagens";
   grid-template-columns: 45% 55%;
-}
+  .texto {
+    grid-area: texto;
+    li {
+      max-width: 350px;
+      font-size: 18px;
+      line-height: 26px;
+    }
 
-.sobre .texto {
-  grid-area: texto;
-}
+    li + li {
+      margin-top: 85px;
+    }
 
-.sobre .texto li {
-  max-width: 350px;
-  font-size: 18px;
-  line-height: 26px;
-}
+    .subtitulo {
+      padding-bottom: 50px;
+      color: #2d2d2d;
+      text-align: center;
+      letter-spacing: normal;
+    }
 
-.sobre .texto li + li {
-  margin-top: 85px;
-}
+    .paragrafo-1 {
+      padding-bottom: 30px;
+      span {
+        color: $color-terciary;
+      }
+    }
 
-.sobre .texto .subtitulo {
-  padding-bottom: 50px;
-  color: #2d2d2d;
-  text-align: center;
-  letter-spacing: normal;
-}
+    .missao p span {
+      font-weight: 500;
+    }
 
-.sobre .texto .paragrafo-1 {
-  padding-bottom: 30px;
-}
-
-.sobre .texto .paragrafo-1 span {
-  color: $color-terciary;
-}
-
-.sobre .texto .missao p span {
-  font-weight: 500;
-}
-.sobre .texto .valores li {
-  margin-top: 5px;
-}
-
-.sobre .texto .sobre .imagens {
-  grid-area: imagens;
-}
-
-.sobre .imagens div:first-child {
-  margin-bottom: 55px;
+    .valores li {
+      margin-top: 5px;
+    }
+  }
+  .imagens {
+    grid-area: imagens;
+    div:first-child {
+      margin-bottom: 55px;
+    }
+  }
 }
