@@ -15,6 +15,10 @@
     line-height: 72px;
     letter-spacing: 0.02em;
     margin-bottom: 13px;
+    @include device(smartphone) {
+      @include type-font(32);
+      font-weight: normal;
+    }
   }
 
   .text-gradient-1 {
@@ -74,11 +78,16 @@
 /* OFERTAS */
 .ofertas {
   padding-top: 63px;
+  margin: 0 auto;
   .itens-oferta {
     display: flex;
-    justify-content: space-between;
+    gap: 79px;
     flex-wrap: wrap;
-    margin-top: 81px;
+    padding-top: 81px;
+    margin: 10px;
+    @include device(smartphone) {
+      justify-content: center;
+    }
   }
   .oferta-price {
     margin-top: 21px;
@@ -102,7 +111,7 @@
   }
   .itens-produto {
     display: flex;
-    justify-content: space-between;
+    gap: 56px;
     flex-wrap: wrap;
     padding-bottom: 40px;
     a {
@@ -115,12 +124,17 @@
       @include type-font(18);
       text-transform: uppercase;
     }
+
+    @include device(smartphone) {
+      justify-content: center;
+    }
   }
 }
 
 .nossa-meta {
   position: relative;
   padding: 89px 0 113px 0;
+
   &::after {
     content: "";
     display: block;
@@ -131,6 +145,9 @@
     top: 289px;
     left: 381px;
     z-index: -1;
+    @include device(smartphone) {
+      display: none;
+    }
   }
 
   .logo-metas {
@@ -141,12 +158,20 @@
     display: grid;
     grid-template-areas: "column-1 column-2 column-3";
     grid-template-columns: 1fr 1fr 1fr;
+    @include device(smartphone) {
+      grid-template-areas: "column-2" "column-3" "column-1";
+      grid-template-columns: 1fr;
+      justify-items: center;
+    }
   }
 
   .column-1 {
     grid-area: column-1;
     padding-top: 182px;
     padding-left: 127px;
+    @include device(smartphone) {
+      padding: 0;
+    }
   }
 
   .column-2 {
@@ -155,6 +180,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    @include device(smartphone) {
+      padding: 0;
+    }
   }
   .logo-metas {
     margin-bottom: 103px;
@@ -176,6 +204,11 @@
   .column-3 .card-metas:first-child {
     margin-top: 81px;
     margin-bottom: 113px;
+
+    @include device(smartphone) {
+      margin-top: 62px;
+      margin-bottom: 55px;
+    }
   }
   .card-metas {
     max-width: 220px;
@@ -186,62 +219,5 @@
     color: #070707;
     margin-bottom: 21px;
     text-align: center;
-  }
-}
-
-.info-footer {
-  background: $color-secondary;
-  padding: 40px 0;
-  color: $color-primary;
-  h3 {
-    @include type-font(18);
-    margin-bottom: 16px;
-  }
-  .container {
-    display: flex;
-    justify-content: space-evenly;
-  }
-  .logo-info-footer {
-    font-size: 48px;
-    color: $color-primary;
-    align-self: center;
-  }
-
-  .contact ul {
-    list-style: inside;
-    padding-left: 13px;
-    li a {
-      color: $color-primary;
-    }
-
-    li + li {
-      margin-top: 9px;
-    }
-  }
-}
-
-.redes-sociais ul {
-  display: flex;
-  li {
-    filter: grayscale(100%);
-    transition: all 0.3s;
-    &:hover {
-      transform: scale(1.1);
-    }
-  }
-  li + li {
-    margin-left: 19px;
-  }
-}
-
-.footer {
-  display: flex;
-  padding: 10px;
-  align-items: flex-end;
-  justify-content: center;
-  span {
-    color: #797979;
-    @include type-font(18);
-    margin-left: 9px;
   }
 }

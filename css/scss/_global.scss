@@ -9,14 +9,18 @@ img {
   max-width: 100%;
 }
 
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  @include device(smartphone) {
+    max-width: $smartphone;
+  }
+}
+
 .logo {
   font-family: "Pacifico", cursive;
   font-size: 24px;
   color: #1b1b1b;
-}
-.container {
-  max-width: 1170px;
-  margin: 0 auto;
 }
 
 .header {
@@ -26,7 +30,13 @@ img {
   position: sticky;
   top: 0;
   z-index: 1;
-
+  @include device(smartphone) {
+    background: $color-secondary;
+    position: static;
+    .logo {
+      color: $color-primary;
+    }
+  }
   .container {
     display: flex;
     justify-content: space-between;
@@ -46,12 +56,16 @@ img {
     li:last-child {
       margin-left: 26px;
     }
+    @include device(smartphone) {
+      display: none;
+    }
   }
 }
 
 .navbar-search-bg {
   background: $color-secondary;
   padding: 28px 0;
+
   .navbar-search {
     display: flex;
     justify-content: space-between;
@@ -90,6 +104,10 @@ img {
     li + li {
       margin-left: 29px;
     }
+  }
+
+  @include device(smartphone) {
+    display: none;
   }
 }
 
@@ -180,5 +198,78 @@ img {
   &:hover {
     background: $color-primary;
     color: #1a1a1a;
+  }
+}
+
+.info-footer {
+  background: $color-secondary;
+  padding: 40px 0;
+  color: $color-primary;
+  h3 {
+    @include type-font(18);
+    margin-bottom: 16px;
+    @include device(smartphone) {
+      text-align: center;
+      @include type-font(24);
+      margin-bottom: 23px;
+    }
+  }
+  .container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .logo-info-footer {
+    font-size: 48px;
+    color: $color-primary;
+    align-self: center;
+    @include device(smartphone) {
+      padding-bottom: 38px;
+    }
+  }
+
+  .contact ul {
+    list-style: inside;
+    padding-left: 13px;
+    li a {
+      color: $color-primary;
+    }
+
+    li + li {
+      margin-top: 9px;
+    }
+
+    @include device(smartphone) {
+      padding-bottom: 55px;
+    }
+  }
+}
+
+.redes-sociais ul {
+  display: flex;
+  li {
+    filter: grayscale(100%);
+    transition: all 0.3s;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  li + li {
+    margin-left: 19px;
+  }
+}
+
+.footer {
+  display: flex;
+  padding: 10px;
+  align-items: flex-end;
+  justify-content: center;
+  span {
+    color: #797979;
+    @include type-font(18);
+    margin-left: 9px;
+    @include device(smartphone) {
+      @include type-font(14);
+    }
   }
 }

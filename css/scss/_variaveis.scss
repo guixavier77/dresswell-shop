@@ -1,5 +1,5 @@
 // Breakpoints
-$desktop: 1200px;
+$desktop: 1140px;
 $tablet: 768px;
 $smartphone: 390px;
 // cores
@@ -31,15 +31,15 @@ $color-terciary: #e22574;
 }
 
 @mixin device($size) {
-  @if $size == l {
+  @if $size == desktop {
     @media screen and (min-width: $desktop) {
       @content;
     }
-  } @else if $size == m {
+  } @else if $size == tablet {
     @media screen and (min-width: $tablet) and (max-width: ($desktop - 1)) {
       @content;
     }
-  } @else if $size == s {
+  } @else if $size == smartphone {
     @media screen and (max-width: ($tablet - 1)) {
       @content;
     }
