@@ -3,7 +3,9 @@
   background-size: cover;
   height: 500px;
   text-align: center;
-
+  @include device(smartphone) {
+    height: 390px;
+  }
   .text-introducao {
     padding-top: 37px;
   }
@@ -66,6 +68,10 @@
     color: $color-primary;
     background: $color-terciary;
     text-transform: uppercase;
+    @include device(smartphone) {
+      padding: 13px 8px;
+      font-size: 1em;
+    }
   }
 }
 
@@ -182,10 +188,35 @@
     align-items: center;
     @include device(smartphone) {
       padding: 0;
+      a {
+        display: none;
+      }
     }
   }
   .logo-metas {
     margin-bottom: 103px;
+
+    @include device(smartphone) {
+      text-align: center;
+      margin-bottom: 177px;
+      margin-top: 151px;
+      @include type-font(32);
+      &::before {
+        content: "Estilo";
+        display: block;
+        position: absolute;
+      }
+      &::after {
+        content: "";
+        display: block;
+        width: 249px;
+        height: 229px;
+        background: url("../img/linha-mobile.svg") no-repeat center;
+        position: absolute;
+        top: 252px;
+        left: 72px;
+      }
+    }
   }
 
   .btn-metas {
@@ -206,12 +237,19 @@
     margin-bottom: 113px;
 
     @include device(smartphone) {
-      margin-top: 62px;
-      margin-bottom: 55px;
+      margin: 0;
+      padding-top: 105px;
     }
   }
   .card-metas {
     max-width: 220px;
+    @include device(smartphone) {
+      max-width: 300px;
+      text-align: center;
+      &:nth-child(2) {
+        padding: 43px 0 43px 0;
+      }
+    }
   }
 
   .card-metas h3 {

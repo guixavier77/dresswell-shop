@@ -71,6 +71,9 @@ img {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    @include device(tablet) {
+      justify-content: center;
+    }
   }
 
   .search {
