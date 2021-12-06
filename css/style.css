@@ -1080,6 +1080,13 @@ img {
   flex-direction: column;
 }
 
+.entrar .login a {
+  font-size: 14px;
+  text-align: right;
+  margin-top: -25px;
+  padding-bottom: 15px;
+}
+
 .cadastro {
   grid-area: cadastro;
   padding: 0 91px 0 71px;
@@ -1321,4 +1328,55 @@ img {
 .list-products .itens-compras .item .compras-price .compras-buttons .compras-btn {
   margin: 0;
   margin-top: 8px;
+}
+
+.recuperacao {
+  display: flex;
+  justify-content: center;
+  padding: 100px 0 138px 0;
+}
+
+.recuperacao div h2 {
+  font-size: 2em;
+  line-height: 0.9375em;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.recuperacao div p {
+  font-size: 1.125em;
+  line-height: 1.66667em;
+  color: rgba(0, 0, 0, 0.5);
+  line-height: normal;
+  text-align: center;
+  max-width: 400px;
+  padding-bottom: 15px;
+}
+
+.recuperacao div form {
+  display: flex;
+  flex-direction: column;
+}
+
+.recuperacao div form label {
+  font-size: 1.125em;
+  line-height: 1.66667em;
+  color: #1b738f;
+}
+
+.recuperacao div form input {
+  border: 1px solid #070707;
+  padding: 10px 12px;
+  outline: none;
+}
+
+.recuperacao div form button {
+  background: #070707;
+  color: #fff;
+  width: 200px;
+  height: 40px;
+  cursor: pointer;
+  margin: 0 auto;
+  margin-top: 34px;
+  border: none;
 }

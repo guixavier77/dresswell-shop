@@ -1,0 +1,47 @@
+.recuperacao {
+  display: flex;
+  justify-content: center;
+  padding: 100px 0 138px 0;
+
+  div {
+    // background: $color-primary;
+    h2 {
+      @include type-font(32);
+      text-align: center;
+      padding-bottom: 15px;
+    }
+    p {
+      @include type-font(18);
+      color: rgba(0, 0, 0, 0.5);
+      line-height: normal;
+      text-align: center;
+      max-width: 400px;
+      padding-bottom: 15px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      // padding: 0 40px 0 40px;
+      label {
+        @include type-font(18);
+        color: #1b738f;
+      }
+      input {
+        border: 1px solid #070707;
+        padding: 10px 12px;
+        outline: none;
+      }
+
+      button {
+        background: #070707;
+        color: $color-primary;
+        width: 200px;
+        height: 40px;
+        cursor: pointer;
+        margin: 0 auto;
+        margin-top: 34px;
+        border: none;
+      }
+    }
+  }
+}
