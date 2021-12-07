@@ -89,11 +89,20 @@
     display: flex;
     gap: 79px;
     flex-wrap: wrap;
+    justify-content: center;
     padding-top: 81px;
     margin: 10px;
     @include device(smartphone) {
       justify-content: center;
     }
+  }
+  .img-item {
+    position: relative;
+  }
+  .btn-favorito {
+    position: absolute;
+    top: 10px;
+    left: 280px;
   }
   .oferta-price {
     margin-top: 21px;
@@ -120,6 +129,7 @@
     gap: 56px;
     flex-wrap: wrap;
     padding-bottom: 40px;
+    justify-content: center;
     a {
       display: block;
       margin-bottom: 47px;
@@ -129,10 +139,6 @@
       text-align: center;
       @include type-font(18);
       text-transform: uppercase;
-    }
-
-    @include device(smartphone) {
-      justify-content: center;
     }
   }
 }

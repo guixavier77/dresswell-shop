@@ -3,6 +3,13 @@
   grid-template-areas: "login cadastro";
   grid-template-columns: 1fr 1fr;
   padding: 60px 0 89px 0;
+  @include device(smartphone) {
+    grid-template-areas:
+      "login"
+      "cadastro";
+    grid-template-columns: 1fr;
+    padding: 36px 0 89px 0;
+  }
   h2 {
     text-align: center;
     @include type-font(32);
@@ -36,6 +43,10 @@
   .login {
     grid-area: login;
     padding: 0 71px 0 67px;
+    @include device(smartphone) {
+      padding: 0;
+      justify-content: center;
+    }
     form {
       display: flex;
       flex-direction: column;
@@ -52,6 +63,11 @@
   grid-area: cadastro;
   padding: 0 91px 0 71px;
   border-left: 1px solid #d4d4d4;
+  @include device(smartphone) {
+    border: none;
+    padding: 0;
+    justify-content: center;
+  }
   .h2-cadastro-color {
     color: $color-terciary;
   }

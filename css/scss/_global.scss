@@ -276,3 +276,13 @@ img {
     }
   }
 }
+
+.btn-favorito .far.fa-heart {
+  @include type-font(32);
+  color: $color-primary;
+}
+
+.btn-favorito .fas.fa-heart {
+  @include type-font(32);
+  color: #ff0f0f;
+}

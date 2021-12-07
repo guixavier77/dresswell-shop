@@ -1,0 +1,41 @@
+.lista-desejo {
+  .itens {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 39px 117px;
+    padding: 80px 0;
+    justify-content: center;
+    .item-desejo {
+      display: flex;
+      flex-direction: row;
+      .info {
+        padding-left: 28px;
+        p {
+          padding-bottom: 24px;
+          @include type-font(18);
+          line-height: 21px;
+        }
+        .price {
+          padding-bottom: 9px;
+        }
+
+        .price-promo {
+          font-size: 1.25em;
+        }
+        div {
+          display: flex;
+          align-items: center;
+        }
+
+        .btn-ver-produto {
+          padding: 5px 20px;
+          @include type-font(18);
+          margin-left: 25px;
+          color: $color-secondary;
+          background: $color-primary;
+          border: 1px solid $color-secondary;
+        }
+      }
+    }
+  }
+}

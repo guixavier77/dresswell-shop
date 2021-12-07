@@ -4,6 +4,12 @@
     display: grid;
     grid-template-areas: "form redes-contato";
     grid-template-columns: 1fr 1fr;
+    @include device(smartphone) {
+      grid-template-areas:
+        "form"
+        "redes-contato";
+      grid-template-columns: 1fr;
+    }
   }
   .title-contato {
     @include type-font(24);
@@ -17,6 +23,10 @@
     flex-direction: column;
     padding-right: 184px;
     border-right: 1px solid #d4d4d4;
+    @include device(smartphone) {
+      border: none;
+      padding: 0;
+    }
     label {
       @include type-font(18);
       margin-bottom: 10px;
@@ -58,6 +68,10 @@
   flex-direction: column;
   padding-top: 10px;
   padding-left: 169px;
+  @include device(smartphone) {
+    padding: 74px 0 0 0;
+    justify-self: center;
+  }
   h3 {
     @include type-font(24);
     color: $color-terciary;

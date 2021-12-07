@@ -3,8 +3,13 @@
   display: grid;
   grid-template-areas: "texto imagens";
   grid-template-columns: 45% 55%;
+  @include device(smartphone) {
+    grid-template-areas: "texto";
+    grid-template-columns: 100%;
+  }
   .texto {
     grid-area: texto;
+
     li {
       max-width: 350px;
       font-size: 18px;
@@ -36,9 +41,15 @@
     .valores li {
       margin-top: 5px;
     }
+    @include device(smartphone) {
+      margin: 0 auto;
+    }
   }
   .imagens {
     grid-area: imagens;
+    @include device(smartphone) {
+      display: none;
+    }
     div:first-child {
       margin-bottom: 55px;
     }
