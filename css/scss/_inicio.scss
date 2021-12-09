@@ -146,6 +146,29 @@
 .nossa-meta {
   position: relative;
   padding: 89px 0 113px 0;
+  .sub-metas {
+    @include device(smartphone) {
+      &::before {
+        content: "Elegância";
+        font-family: Inter;
+        font-size: 1em;
+        height: 35px;
+        background: linear-gradient(
+            91.8deg,
+            #f1a4f2 3.5%,
+            rgba(255, 255, 255, 0) 81.73%
+          ),
+          linear-gradient(0deg, #c819d8, #c819d8);
+
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        position: absolute;
+        top: 205px;
+        left: 244px;
+      }
+    }
+  }
 
   &::after {
     content: "";
@@ -160,16 +183,48 @@
     @include device(smartphone) {
       display: none;
     }
+
+    @include device(tablet) {
+      display: none;
+    }
   }
 
   .logo-metas {
     font-size: 48px;
+    @include device(smartphone) {
+      &::before {
+        content: "Estilo";
+        font-family: Inter;
+        font-size: 1em;
+        height: 35px;
+        background: linear-gradient(
+            91.54deg,
+            #22eda4 4.68%,
+            rgba(255, 255, 255, 0) 117.13%
+          ),
+          linear-gradient(0deg, #63e6c6, #63e6c6);
+
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        position: absolute;
+        top: 205px;
+        left: 42px;
+      }
+    }
   }
 
   .metas {
     display: grid;
     grid-template-areas: "column-1 column-2 column-3";
     grid-template-columns: 1fr 1fr 1fr;
+
+    @include device(tablet) {
+      grid-template-areas:
+        "column-2 column-2"
+        "column-3 column-1";
+      grid-template-columns: 3fr 1fr;
+    }
     @include device(smartphone) {
       grid-template-areas: "column-2" "column-3" "column-1";
       grid-template-columns: 1fr;
@@ -183,6 +238,12 @@
     padding-left: 127px;
     @include device(smartphone) {
       padding: 0;
+    }
+
+    @include device(tablet) {
+      padding: 0;
+
+      margin-left: auto;
     }
   }
 
@@ -198,6 +259,13 @@
         display: none;
       }
     }
+
+    @include device(tablet) {
+      padding: 0;
+      a {
+        display: none;
+      }
+    }
   }
   .logo-metas {
     margin-bottom: 103px;
@@ -207,11 +275,7 @@
       margin-bottom: 177px;
       margin-top: 151px;
       @include type-font(32);
-      &::before {
-        content: "Estilo";
-        display: block;
-        position: absolute;
-      }
+
       &::after {
         content: "";
         display: block;
@@ -236,6 +300,36 @@
 
   .column-3 {
     grid-area: column-3;
+    @include device(smartphone) {
+      &::after {
+        content: "Qualidade";
+        font-family: Inter;
+        @include type-font(32, 16);
+        height: 35px;
+        background: linear-gradient(
+            93.02deg,
+            #1224c8 -29.16%,
+            rgba(255, 255, 255, 0) 92.9%
+          ),
+          linear-gradient(0deg, #2fb7e2, #2fb7e2);
+
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        position: absolute;
+        top: 501px;
+        left: 119px;
+      }
+    }
+
+    @include device(tablet) {
+      display: flex;
+      margin: 0;
+
+      .card-metas:last-child {
+        margin: 0 auto;
+      }
+    }
   }
 
   .column-3 .card-metas:first-child {
@@ -245,6 +339,10 @@
     @include device(smartphone) {
       margin: 0;
       padding-top: 105px;
+    }
+
+    @include device(tablet) {
+      margin: 0;
     }
   }
   .card-metas {

@@ -907,6 +907,22 @@ img {
   padding: 89px 0 113px 0;
 }
 
+@media screen and (max-width: 767px) {
+  .nossa-meta .sub-metas::before {
+    content: "Elegância";
+    font-family: Inter;
+    font-size: 1em;
+    height: 35px;
+    background: linear-gradient(91.8deg, #f1a4f2 3.5%, rgba(255, 255, 255, 0) 81.73%), linear-gradient(0deg, #c819d8, #c819d8);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+    top: 205px;
+    left: 244px;
+  }
+}
+
 .nossa-meta::after {
   content: "";
   display: block;
@@ -925,14 +941,43 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1139px) {
+  .nossa-meta::after {
+    display: none;
+  }
+}
+
 .nossa-meta .logo-metas {
   font-size: 48px;
+}
+
+@media screen and (max-width: 767px) {
+  .nossa-meta .logo-metas::before {
+    content: "Estilo";
+    font-family: Inter;
+    font-size: 1em;
+    height: 35px;
+    background: linear-gradient(91.54deg, #22eda4 4.68%, rgba(255, 255, 255, 0) 117.13%), linear-gradient(0deg, #63e6c6, #63e6c6);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+    top: 205px;
+    left: 42px;
+  }
 }
 
 .nossa-meta .metas {
   display: grid;
   grid-template-areas: "column-1 column-2 column-3";
   grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1139px) {
+  .nossa-meta .metas {
+    grid-template-areas: "column-2 column-2" "column-3 column-1";
+    grid-template-columns: 3fr 1fr;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -955,6 +1000,13 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1139px) {
+  .nossa-meta .column-1 {
+    padding: 0;
+    margin-left: auto;
+  }
+}
+
 .nossa-meta .column-2 {
   grid-area: column-2;
   padding: 211px 146px 0 0;
@@ -964,6 +1016,15 @@ img {
 }
 
 @media screen and (max-width: 767px) {
+  .nossa-meta .column-2 {
+    padding: 0;
+  }
+  .nossa-meta .column-2 a {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1139px) {
   .nossa-meta .column-2 {
     padding: 0;
   }
@@ -983,11 +1044,6 @@ img {
     margin-top: 151px;
     font-size: 2em;
     line-height: 0.9375em;
-  }
-  .nossa-meta .logo-metas::before {
-    content: "Estilo";
-    display: block;
-    position: absolute;
   }
   .nossa-meta .logo-metas::after {
     content: "";
@@ -1015,6 +1071,33 @@ img {
   grid-area: column-3;
 }
 
+@media screen and (max-width: 767px) {
+  .nossa-meta .column-3::after {
+    content: "Qualidade";
+    font-family: Inter;
+    font-size: 2em;
+    line-height: 0.9375em;
+    height: 35px;
+    background: linear-gradient(93.02deg, #1224c8 -29.16%, rgba(255, 255, 255, 0) 92.9%), linear-gradient(0deg, #2fb7e2, #2fb7e2);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+    top: 501px;
+    left: 119px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1139px) {
+  .nossa-meta .column-3 {
+    display: flex;
+    margin: 0;
+  }
+  .nossa-meta .column-3 .card-metas:last-child {
+    margin: 0 auto;
+  }
+}
+
 .nossa-meta .column-3 .card-metas:first-child {
   margin-top: 81px;
   margin-bottom: 113px;
@@ -1024,6 +1107,12 @@ img {
   .nossa-meta .column-3 .card-metas:first-child {
     margin: 0;
     padding-top: 105px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1139px) {
+  .nossa-meta .column-3 .card-metas:first-child {
+    margin: 0;
   }
 }
 
