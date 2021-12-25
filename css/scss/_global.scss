@@ -24,7 +24,7 @@ img {
 }
 
 .header {
-  padding: 11.5px 0;
+  // padding: 11.5px 0;
   background: $color-primary;
   position: -webkit-sticky; /* Necessário para funcionar no Safari */
   position: sticky;
@@ -47,8 +47,16 @@ img {
   .navbar-item {
     display: flex;
     align-items: center;
+    li {
+      padding: 11.5px 0;
+    }
     li a {
       color: #1b1b1b;
+      padding: 11.5px 0;
+      &:hover {
+        color: $color-terciary;
+        border-bottom: 3px solid $color-terciary;
+      }
     }
     li + li {
       margin-left: 16px;

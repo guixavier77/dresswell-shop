@@ -436,7 +436,6 @@ img {
 }
 
 .header {
-  padding: 11.5px 0;
   background: #fff;
   position: -webkit-sticky;
   /* Necessário para funcionar no Safari */
@@ -467,8 +466,18 @@ img {
   align-items: center;
 }
 
+.header .navbar-item li {
+  padding: 11.5px 0;
+}
+
 .header .navbar-item li a {
   color: #1b1b1b;
+  padding: 11.5px 0;
+}
+
+.header .navbar-item li a:hover {
+  color: #e22574;
+  border-bottom: 3px solid #e22574;
 }
 
 .header .navbar-item li + li {
@@ -814,6 +823,11 @@ img {
   color: #fff;
   background: #e22574;
   text-transform: uppercase;
+}
+
+.introducao .btn-intro:hover {
+  border: 2px solid #e22574;
+  background: none;
 }
 
 @media screen and (max-width: 767px) {
@@ -1219,6 +1233,13 @@ img {
   .cadastro {
     border: none;
     padding: 0;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1139px) {
+  .cadastro {
+    padding: 0 40px 0 40px;
     justify-content: center;
   }
 }

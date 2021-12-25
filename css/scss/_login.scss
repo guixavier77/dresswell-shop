@@ -68,6 +68,10 @@
     padding: 0;
     justify-content: center;
   }
+  @include device(tablet) {
+    padding: 0 40px 0 40px;
+    justify-content: center;
+  }
   .h2-cadastro-color {
     color: $color-terciary;
   }

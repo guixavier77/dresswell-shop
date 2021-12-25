@@ -68,6 +68,11 @@
     color: $color-primary;
     background: $color-terciary;
     text-transform: uppercase;
+    &:hover {
+      border: 2px solid $color-terciary;
+
+      background: none;
+    }
     @include device(smartphone) {
       padding: 13px 8px;
       font-size: 1em;
