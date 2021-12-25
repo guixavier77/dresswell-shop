@@ -2,7 +2,7 @@
   DRESSWELL SHOP
 </h1>
 <h1 align="center">
-  <img src="img/readme/preview.gif">
+  <img src="img/readme/preview-dresswell.gif">
 </h1>
 
 ---
