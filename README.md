@@ -9,7 +9,7 @@
 
 ## 📑 Sobre
 
-## O projeto DressWell, é um e-commerce fictício que é do nicho da moda.
+O projeto DressWell, é um e-commerce fictício que faz parte do nicho da moda.
 
 ## 🚀 Tecnologias utilizadas
 
